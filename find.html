@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/82f8bbad52.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>검색 - 네버톡</title>
+  </head>
+  <body>
+    <div id="status-bar">
+      <div class="status-bar__column">
+        <span>KT</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>77%</span>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-regular fa-alarm-clock"></i>
+      </div>
+    </div>
+
+    <header class="header">
+      <h1 class="header__title">검색</h1>
+      <div class="header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+        <span>
+          <a href="settings.html">
+            <span class="header__notification--more"></span>
+            <i class="fa-solid fa-gear fa-xl"></i>
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>QR 코드</span>
+        </div>
+
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span>연락처로 추가</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-fingerprint"></i>
+          <span>ID로 추가</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>초대</span>
+        </div>
+      </div>
+
+      <div class="recommended-friends">
+        <div class="recommended-friends__title">추천 친구</div>
+        <span>추천 친구가 없습니다.</span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <div class="open-chat__title">오픈 채팅</div>
+          <span
+            >오픈 채팅 홈으로 가기
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </div>
+
+        <div class="open-chat__post">
+          <div class="open-chat__post__column">
+            <div class="post__title">OMG</div>
+            <div class="post__hashtag">#Oh My Girl #OMG #Arin</div>
+            <div class="post__members">
+              <img src="imgs/anonymous.jpg " />
+              <span class="post__members--count">802 members</span>
+              <div class="post__members--divider">|</div>
+              <span class="post__members--status">Active</span>
+            </div>
+          </div>
+
+          <div class="open-chat__post__column">
+            <div class="open-chat__post__column--content">
+              <img src="imgs/Arin.jpeg" alt="" />
+              <div class="good">
+                <i class="fa-solid fa-heart fa-xs"></i>
+                <span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html"
+            ><i class="fa-regular fa-user fa-xl"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html">
+            <span class="nav__notification--message badge">1</span>
+            <i class="fa-regular fa-comment fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-xl"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html">
+            <span class="nav__notification--more"></span>
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>스크린이 너무 큽니다 ㅠㅠ</span>
+    </div>
+  </body>
+</html>

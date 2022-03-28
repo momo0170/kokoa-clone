@@ -1,0 +1,52 @@
+@import 'reset.css';
+@import 'variables.css';
+
+/* Screen */
+@import 'screens/login.css';
+@import 'screens/friends.css';
+@import 'screens/find.css';
+@import 'screens/more.css';
+@import 'screens/setting.css';
+@import 'screens/chat.css';
+
+/* Components */
+@import 'components/status-bar.css';
+@import 'components/navbar.css';
+@import 'components/screen-header.css';
+@import 'components/user-component.css';
+@import 'components/badge.css';
+@import 'components/icon-row.css';
+@import 'components/point.css';
+@import 'components/alt-screen-header.css';
+@import 'components/no-mobile.css';
+
+body {
+  font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #2e363e;
+  height: 117vh;
+}
+
+.main-screen {
+  padding: 0 var(--padding);
+  margin-top: 60px;
+}
+
+.icon-screen {
+  margin: 30px 30px;
+}
+.friends-screen {
+  margin-top: 0px;
+}
+
+.setting-screen {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin: 0 20px;
+}
+#friends-display-link {
+  margin-top: 60px;
+}
+
+.pay {
+  margin-top: 60px;
+}

@@ -1,0 +1,113 @@
+.user-component {
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+/* .user-component__avatar {
+  width: var(--normal-avatar);
+  height: var(--normal-avatar);
+  border-radius: 28px;
+} */
+
+.user-component__name {
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+.user-component__title {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 12px;
+  color: var(--color-grey);
+}
+
+.user-component__avatar--big {
+  width: var(--big-avatar);
+  height: var(--big-avatar);
+  border-radius: 27px;
+  border: 1px solid var(--color-light-grey);
+}
+
+.user-component__avatar--small {
+  width: var(--small-avatar);
+  height: var(--small-avatar);
+  border-radius: 19px;
+  border: 1px solid var(--color-light-grey);
+}
+
+.user-component__avatar--normal {
+  width: var(--normal-avatar);
+  height: var(--normal-avatar);
+  border-radius: 23px;
+  border: 1px solid var(--color-light-grey);
+}
+
+.user-component__name--notbold {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.user-component--music {
+  padding: 1px 7px;
+  border: 1px solid var(--color-normal-green);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 170px;
+}
+
+.user-component--music span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 2px;
+  font-size: 12px;
+  color: var(--color-grey);
+}
+
+.user-component--music i {
+  padding: 2px;
+  margin-left: 5px;
+  font-size: 18px;
+  color: var(--color-normal-green);
+}
+
+.friends-screen__channel .user-component__column:last-child {
+  color: var(--color-grey);
+}
+.friends-screen__channel .user-component__column:last-child i {
+  font-size: 13px;
+}
+
+.friends-screen__channel .user-component__column:last-child span {
+  font-size: 15px;
+}
+.friends-screen__friend .user-component {
+  margin-bottom: 15px;
+}
+
+.main-screen .user-component__column:last-child .user-component--time {
+  margin-bottom: 5px;
+  display: block;
+  color: var(--color-normal-grey);
+  font-size: 13px;
+}
+
+.main-screen .user-component__column:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__nameAndtitle span {
+  color: var(--color-grey);
+  font-size: 16px;
+  margin-left: 5px;
+}

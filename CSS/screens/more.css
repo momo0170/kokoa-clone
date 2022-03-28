@@ -1,0 +1,59 @@
+.pay {
+  background-color: var(--color-normal-green);
+  padding: 25px;
+  color: white;
+  text-shadow: 0 0 2px black;
+  margin-bottom: 20px;
+}
+
+.pay__column__main--wallet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pay__column__main--wallet > span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pay__column__main--wallet > span i {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.pay--divider {
+  margin: 0 10px;
+  opacity: 0.3;
+}
+
+.pay__column__link {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pay__column__money {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pay__column__money--pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.pay__column__money--pay i {
+  margin-right: 5px;
+}
+
+.pay__column__mypage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}

@@ -1,0 +1,29 @@
+.settings__list {
+  padding: 15px 0;
+  border-bottom: 1px solid #fafafa;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__list i {
+  margin-right: 20px;
+}
+
+.setting:first-child .settings__list:nth-child(3) {
+  border-bottom: none;
+}
+
+.setting:first-child .settings__list--column:last-child {
+  color: var(--color-normal-grey);
+}
+
+.setting:first-child {
+  border-bottom: var(--division-bar);
+  padding-bottom: 20px;
+}
+
+.setting:last-child {
+  padding-top: 20px;
+}

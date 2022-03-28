@@ -1,0 +1,21 @@
+.nav__notification--more {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.header__notification--more {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 40px;
+}

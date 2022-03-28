@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/82f8bbad52.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Welcom to Kokoa Talk</title>
+  </head>
+  <body>
+    <div id="status-bar">
+      <div class="status-bar__column">
+        <span>KT</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>77%</span>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-regular fa-alarm-clock"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">네버톡에 오신 것을 환영합니다.</h1>
+      <p class="welcome-header__text">네버톡 계정으로 로그인하십시오.</p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="username"
+        required
+        type="text"
+        placeholder="이메일 또는 휴대폰 번호"
+      />
+      <input name="password" required type="password" placeholder="비밀번호" />
+      <input type="submit" value="로그인" />
+      <input type="submit" value="회원 가입" />
+      <div class="find">
+        <a class="find__account" href="#">계정 찾기</a>
+        <a class="find__password" href="#">|</a>
+        <a class="find__password" href="#">비밀번호 재설정</a>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>스크린이 너무 큽니다 ㅠㅠ</span>
+    </div>
+  </body>
+</html>

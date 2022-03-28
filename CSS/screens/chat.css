@@ -1,0 +1,219 @@
+#chat-screen {
+  background-color: #a7bdcd;
+}
+
+#chat-screen .alt-header,
+#chat-screen #status-bar {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  background-color: #a7bdcd;
+}
+
+#chat-screen .alt-header {
+  top: 30px;
+}
+
+.main-chat-screen {
+  margin-top: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.main-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.6s linear;
+}
+
+.chat__timestamp {
+  background-color: #92a4b3;
+  color: var(--color-dark-white);
+  font-weight: 200;
+  font-size: 12px;
+  padding: 7px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+@keyframes leftAnimation {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: none;
+  }
+}
+/* 채팅 */
+.message-row {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  animation: leftAnimation 0.3s linear;
+}
+
+/* 프로필 사진 */
+.message-row img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  margin-right: 10px;
+}
+/* 닉네임 */
+.message-row__name {
+  font-size: 12px;
+  margin-bottom: 7px;
+  display: block;
+  color: var(--color-dark-grey);
+}
+
+.message__contentAndtime {
+  display: flex;
+  align-items: center;
+}
+.message__content {
+  background-color: var(--color-dark-white);
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 11px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+.message__time {
+  font-size: 11px;
+  color: var(--color-dark-grey);
+  margin-top: 2px;
+}
+.message__read {
+  color: yellow;
+  font-size: 8px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.message__readAndtime--own {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.message__readAndtime {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes rightAnimation {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.message-row--own {
+  justify-content: flex-end;
+  animation: rightAnimation 0.3s linear;
+}
+
+.message-row--own .message__content {
+  background-color: var(--color-normal-green);
+  color: var(--color-dark-white);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 11px;
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.message-row--own .message__contentAndtime {
+  flex-direction: row-reverse;
+}
+
+.input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.input .input__column:first-child {
+  width: 10%;
+}
+.input .input__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.input input {
+  height: 30px;
+  width: 100%;
+  border-radius: 20px;
+  border: var(--division-bar);
+  background-color: var(--color-dark-white);
+  transition: all 0.3s ease-in-out;
+}
+.input i {
+  color: var(--color-normal-grey);
+}
+.input__column:last-child > i,
+.input__column:last-child button {
+  position: absolute;
+  right: -2px;
+  top: 3px;
+}
+
+.input__column:last-child > i {
+  right: 35px;
+  top: 17px;
+}
+
+.input__column:last-child button {
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-normal-green);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.input__column button i {
+  color: var(--color-white);
+}
+
+.input .fa-face-smile,
+.input .input__column:first-child,
+.input button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* input 안에 focus된 요소가 있다면 */
+.input:focus-within .input__column:first-child,
+.input:focus-within .fa-face-smile,
+.input:focus-within button {
+  opacity: 0;
+}
+
+.input:focus-within input {
+  width: 95vw;
+  transform: translateX(-12%) translateY(-80px);
+}
+
+.input:focus-within {
+  transform: translateY(80px);
+}
